@@ -1,6 +1,6 @@
 # Prescription Box Application
 
-Your task is to build a prescription box application that allows the user to input free text and convert it into structured data using the OpenAI API.
+Your task is to build prescription box application that allows the user to input free text and convert it into structured data using the OpenAI API.
 
 You may use the library available at [MacPaw/OpenAI](https://github.com/MacPaw/OpenAI).
 
