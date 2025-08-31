@@ -1,24 +1,27 @@
-//
-//  ContentView.swift
-//  PrescriptionBox
-//
-//  Created by Aditya Kadam on 31/08/25.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView {
+            HomeView()
+                .tabItem {
+                    Label("Home", systemImage: "house")
+                }
+            
+            PrescriptionsView()
+                .tabItem {
+                    Label("Prescriptions", systemImage: "pills")
+                }
+            
+            LabReportsView()
+                .tabItem {
+                    Label("Lab Reports", systemImage: "doc.text")
+                }
+            
+            SettingsView()
+                .tabItem {
+                    Label("Settings", systemImage: "gear")
+                }
         }
-        .padding()
     }
-}
-
-#Preview {
-    ContentView()
 }
