@@ -1,7 +1,6 @@
 import Foundation
 
-struct LabReport: Identifiable, Codable {
-    let id: UUID
+struct LabReport: Codable {
     let patientName: String
     let testName: String
     let testDate: Date
@@ -11,7 +10,6 @@ struct LabReport: Identifiable, Codable {
     let status: ReportStatus
     
     init(
-        id: UUID = UUID(),
         patientName: String,
         testName: String,
         testDate: Date,
@@ -20,7 +18,7 @@ struct LabReport: Identifiable, Codable {
         labName: String,
         status: ReportStatus
     ) {
-        self.id = id
+        
         self.patientName = patientName
         self.testName = testName
         self.testDate = testDate

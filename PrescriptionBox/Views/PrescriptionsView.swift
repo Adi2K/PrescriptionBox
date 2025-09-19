@@ -4,17 +4,11 @@ struct PrescriptionsView: View {
     var body: some View {
         NavigationStack {
             List {
-                Text("No prescriptions available")
+                Text("Here we need to add a Text Input Field and a Button to create Structred Prescriptions from Free text")
                     .foregroundColor(.secondary)
             }
             .navigationTitle("Prescriptions")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {}) {
-                        Image(systemName: "plus")
-                    }
-                }
-            }
+
         }
     }
 }

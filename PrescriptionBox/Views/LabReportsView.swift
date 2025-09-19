@@ -4,17 +4,10 @@ struct LabReportsView: View {
     var body: some View {
         NavigationStack {
             List {
-                Text("No lab reports available")
+                Text("Here we need to add a Text Input Field and a Button to create Structred Lab reports from Free text")
                     .foregroundColor(.secondary)
             }
             .navigationTitle("Lab Reports")
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {}) {
-                        Image(systemName: "plus")
-                    }
-                }
-            }
         }
     }
 }

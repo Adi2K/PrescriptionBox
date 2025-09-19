@@ -5,12 +5,12 @@ struct SettingsView: View {
         NavigationStack {
             Form {
                 Section("API Configuration") {
-                    Text("API settings will go here")
+                    Text("Placeholder for API Config")
                         .foregroundColor(.secondary)
                 }
                 
                 Section("App Settings") {
-                    Text("App preferences will go here")
+                    Text("Placeholder for App Settings")
                         .foregroundColor(.secondary)
                 }
                 

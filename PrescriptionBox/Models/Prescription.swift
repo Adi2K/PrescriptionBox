@@ -1,7 +1,6 @@
 import Foundation
 
-struct Prescription: Identifiable, Codable {
-    let id: UUID
+struct Prescription: Codable {
     let patientName: String
     let medicationName: String
     let dosage: String
@@ -11,7 +10,6 @@ struct Prescription: Identifiable, Codable {
     let notes: String?
     
     init(
-        id: UUID = UUID(),
         patientName: String,
         medicationName: String,
         dosage: String,
@@ -20,7 +18,6 @@ struct Prescription: Identifiable, Codable {
         doctorName: String,
         notes: String? = nil
     ) {
-        self.id = id
         self.patientName = patientName
         self.medicationName = medicationName
         self.dosage = dosage
